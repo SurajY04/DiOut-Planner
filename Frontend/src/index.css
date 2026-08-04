@@ -1,0 +1,706 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+#create-plan-main {
+  height: 70vh;
+  width: 60vw;
+  background-color: #19c2;
+  border-radius: 20px;
+  border: 2px solid #7df4ff;
+  box-shadow: 1px 1px 15px #7df4ff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  corner-shape: bevel;
+
+}
+
+#create-plan-main-upper {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 30px;
+  font-size: 15px;
+  color: #7df4ff;
+  font-weight: lighter;
+}
+
+#create-plan-main-upper img {
+  height: 50px;
+}
+
+#create-plan-main-middle {
+  height: 40vh;
+  width: 90%;
+  background-color: #19c2;
+  border: 1px solid #7df4ff;
+  border-radius: 20px;
+  corner-shape: bevel;
+  box-shadow: 1px 1px 6px #7df4ff;
+}
+
+#create-plan-main-middle form {
+  display: flex;
+  justify-content: space-around;
+  padding-block: 5px;
+  color: #7df4ff;
+}
+
+#form-left {
+  padding-block: 5px;
+}
+
+#Persona {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 12vw;
+  height: 35vh;
+}
+
+#Persona input {
+  width: 12vw;
+  height: 4vh;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#form-center {
+  padding-block: 5px;
+}
+
+#goal {
+  padding-left: 10px;
+  margin-block: 10px;
+  width: 12vw;
+  height: 4vh;
+  border-radius: 10px;
+}
+
+#form-right {
+  padding-block: 5px;
+
+}
+
+#dietry-preference {
+  padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#radio {
+  display: flex;
+  gap: 5px;
+}
+
+#create-plan-main-lower {
+  height: 10vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #7df4ff;
+}
+
+
+#create-plan-main-lower button {
+  height: 5vh;
+  width: 8vw;
+  border-radius: 10px;
+  border: 1px solid #7dff99;
+  box-shadow: 1px 1px 3px #7dff99;
+  background-color: #19c2;
+  color: whitesmoke;
+}
+
+#register-main {
+  height: 65vh;
+  width: 25vw;
+  background-color: #19c2;
+  color: #7df4ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid #7df4ff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px #7df4ff;
+}
+
+#register-main-upper {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+#register-main-upper img {
+  height: 50px;
+}
+
+#register-main-middle {
+  height: 40vh;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid #7df4ff;
+  background-color: #19c2;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 6px #7df4ff;
+}
+
+#register-form {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#register-form input {
+  width: 80%;
+  height: 5vh;
+  background-color: #19c2;
+  border: 1px solid #7df4ff;
+  box-shadow: 1px 1px 6px #7df4ff;
+  border-radius: 15px;
+  padding-left: 10px;
+  color: #7df4ff;
+}
+
+#register-main-bottom button {
+  height: 5vh;
+  width: 9vw;
+  background-color: #19c2;
+  border: 2px solid #7dff99;
+  color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #7dff99;
+  margin-bottom: 5px;
+}
+
+#login-main {
+  height: 65vh;
+  width: 25vw;
+  background-color: #19c2;
+  color: #7df4ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid #7df4ff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px #7df4ff;
+}
+
+#login-main-upper {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+#login-main-upper img {
+  height: 50px;
+}
+
+#login-main-middle {
+  height: 35vh;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid #7df4ff;
+  background-color: #19c2;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 6px #7df4ff;
+}
+
+#login-form {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#login-form input {
+  width: 80%;
+  height: 5vh;
+  background-color: #19c2;
+  border: 1px solid #7df4ff;
+  box-shadow: 1px 1px 6px #7df4ff;
+  border-radius: 15px;
+  padding-left: 10px;
+  color: #7df4ff;
+}
+
+#login-main-bottom button {
+  height: 5vh;
+  width: 9vw;
+  background-color: #19c2;
+  border: 2px solid #7dff99;
+  color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #7dff99;
+  margin-bottom: 5px;
+}
+
+#get-plan-main {
+  height: 75vh;
+  width: 70vw;
+  border: 2px solid #7df4ff;
+  background-color: #19c2;
+  border-radius: 25px;
+  box-shadow: 1px 1px 8px #7df4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+#get-plan-main-upper {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  height: 9vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #19c2;
+  margin-top: 10px;
+  box-shadow: 1px 1px 2px #7df4ff;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul {
+  height: 6vh;
+  width: 95%;
+  border-radius: 10px;
+
+}
+
+.upper {
+  border: 1px solid white;
+  height: 5vh;
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  border-radius: 10px;
+  background-color: #343a40;
+  transform: translateY(0px) scale(1);
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 2px 2px 10px rgba(198, 197, 197, 0.474);
+
+}
+
+.upper:hover {
+  transform: translateY(-5px);
+  transition: 0.4s ease-in-out;
+  box-shadow: 1px 2px 6px #7dff99;
+}
+
+.upper:active {
+  transform: scale(0.8);
+}
+
+
+#get-plan-main-lower {
+  height: 60vh;
+  width: 95%;
+  padding-block: 10px;
+  padding-inline: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #7df4ff;
+  border-radius: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  color: #7df4ff;
+  transition: transform 0.8s;
+  background-color: #19c2;
+}
+
+#card-back {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5px;
+  scrollbar-width: none;
+  flex-direction: column;
+  gap: 10px;
+  line-break: normal;
+  padding-left: 5px;
+  overflow: hidden;
+  position: absolute;
+  transform: scale(1);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  overflow-y: auto;
+  word-spacing: 2px;
+  word-break: keep-all;
+}
+
+#card-back ul {
+  list-style-type: circle;
+}
+
+#card-front {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+#card:hover {
+  transform: rotateY(180deg) scale(1.1);
+  transition: 0.4 ease-in-out;
+}
+
+#macros {
+  height: 55vh;
+  width: 45vw;
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(-10vw);
+  color: wheat;
+}
+
+/* ============================================================
+   RESPONSIVE STYLES
+   Tablet breakpoint: max-width 600px
+   Mobile breakpoint: max-width 400px
+   Desktop/laptop styles above are left completely untouched.
+   ============================================================ */
+
+/* ---------------- TABLET (<= 600px) ---------------- */
+@media screen and (max-width: 800px) {
+
+  body,
+  html {
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: hidden;
+  }
+
+  /* ---- Create Plan ---- */
+  #create-plan-main {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding-block: 20px;
+  }
+
+  #create-plan-main-upper {
+    height: auto;
+    padding-inline: 15px;
+    flex-wrap: wrap;
+  }
+
+  #create-plan-main-middle {
+    height: auto;
+    width: 92%;
+    padding-block: 15px;
+  }
+
+  #create-plan-main-middle form {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #Persona {
+    width: 80vw;
+    height: auto;
+    gap: 10px;
+  }
+
+  #Persona input {
+    width: 80vw;
+    height: 5vh;
+  }
+
+  #goal {
+    width: 80vw;
+    height: 5vh;
+  }
+
+  #dietry-preference {
+    width: 80vw;
+  }
+
+  #create-plan-main-lower {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-block: 10px;
+  }
+
+  #create-plan-main-lower button {
+    width: 35vw;
+    height: 5vh;
+  }
+
+  /* ---- Register ---- */
+  #register-main {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding-block: 20px;
+  }
+
+  #register-main-middle {
+    height: auto;
+    width: 90%;
+    padding-block: 20px;
+  }
+
+  #register-form input {
+    width: 90%;
+    height: 6vh;
+  }
+
+  #register-main-bottom button {
+    width: 30vw;
+    height: 5.5vh;
+  }
+
+  /* ---- Login ---- */
+  #login-main {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding-block: 20px;
+  }
+
+  #login-main-middle {
+    height: auto;
+    width: 90%;
+    padding-block: 20px;
+  }
+
+  #login-form input {
+    width: 90%;
+    height: 6vh;
+  }
+
+  #login-main-bottom button {
+    width: 30vw;
+    height: 5.5vh;
+  }
+
+  /* ---- Get Plan ---- */
+  #get-plan-main {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding-block: 15px;
+  }
+
+  #get-plan-main-upper {
+    height: auto;
+  }
+
+  nav {
+    width: 90%;
+    height: auto;
+    padding-block: 8px;
+  }
+
+  nav ul {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .upper {
+    width: 22vw;
+    height: 4.5vh;
+    font-size: 12px;
+  }
+
+  #get-plan-main-lower {
+    height: auto;
+    width: 100%;
+    gap: 15px;
+    padding-block: 15px;
+  }
+
+  #card {
+    height: 160px;
+    width: 40vw;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+  }
+}
+
+/* ---------------- MOBILE (<= 400px) ---------------- */
+@media screen and (max-width: 400px) {
+
+  /* ---- Create Plan ---- */
+  #create-plan-main-upper {
+    font-size: 12px;
+    padding-inline: 10px;
+    flex-direction: row;
+  }
+
+  #create-plan-main-upper img {
+    height: 38px;
+  }
+
+  #create-plan-main-middle {
+    width: 95%;
+  }
+
+  #Persona,
+  #Persona input,
+  #goal,
+  #dietry-preference {
+    width: 88vw;
+  }
+
+  #create-plan-main-lower {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #create-plan-main-lower button {
+    width: 60vw;
+    height: 6vh;
+  }
+
+  /* ---- Register ---- */
+  #register-main-upper img {
+    height: 38px;
+  }
+
+  #register-main-middle {
+    width: 95%;
+  }
+
+  #register-form input {
+    width: 95%;
+  }
+
+  #register-main-bottom button {
+    width: 45vw;
+    height: 6vh;
+  }
+
+  /* ---- Login ---- */
+  #login-main-upper img {
+    height: 38px;
+  }
+
+  #login-main-middle {
+    width: 95%;
+  }
+
+  #login-form input {
+    width: 95%;
+  }
+
+  #login-main-bottom button {
+    width: 45vw;
+    height: 6vh;
+  }
+
+  /* ---- Get Plan ---- */
+  nav {
+    width: 95%;
+  }
+
+  .upper {
+    width: 26vw;
+    height: 5vh;
+    font-size: 11px;
+  }
+
+  #get-plan-main-lower {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  #card {
+    height: 140px;
+    width: 80vw;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+  }
+
+  #macros {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    transform: translateX(2px);
+  }
+
+}
