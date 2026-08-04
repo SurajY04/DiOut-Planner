@@ -28,7 +28,7 @@ const Register = () => {
   return (
     <div id="register-main">
         <div id="register-main-upper">
-            <img src="./src/assets/screen.png"/>
+            <img src="/screen.png"/>
             <h1>Connect With DiOut</h1>
         </div>
         <div id="register-main-middle">

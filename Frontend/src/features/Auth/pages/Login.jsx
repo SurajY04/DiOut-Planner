@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React  from 'react'
 import { useAuth } from '../hooks/useAuth'
 
+
 const Login = () => {
 
     const { loading, handleLogin } = useAuth()
@@ -20,7 +21,7 @@ const Login = () => {
     return (
         <div id="login-main">
             <div id="login-main-upper">
-                <img src="./src/assets/screen.png" />
+                <img src="/screen.png" />
                 <h1>Connect With DiOut</h1>
             </div>
             <div id="login-main-middle">
