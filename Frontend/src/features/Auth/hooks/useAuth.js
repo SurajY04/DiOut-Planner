@@ -17,7 +17,7 @@ export const useAuth = () => {
             setUser(data.user)
             alert(data.message)
             console.log(data)
-            navigate("/login")
+            navigate('/login')
             setLoading(false)
         } catch (error) {
             console.log(error)
