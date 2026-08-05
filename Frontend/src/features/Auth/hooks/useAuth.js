@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../services/auth.context";
-import { loginApi, registerApi } from "../services/auth.api";
+import { getMeApi, loginApi, registerApi } from "../services/auth.api";
 import { useNavigate } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 export const useAuth = () => {
     const navigate = useNavigate()
     const context = useContext(AuthContext);
-    const { loading, setLoading, user, setUser , isAuthenticated , setIsAuthenticated } = context;
+    const { loading, setLoading, user, setUser, isAuthenticated, setIsAuthenticated } = context;
 
     const handleRegister = async ({ username, email, password }) => {
         try {
@@ -17,7 +17,9 @@ export const useAuth = () => {
             setUser(data.user)
             alert(data.message)
             console.log(data)
-            navigate('/login')
+            console.log("Before navigate");
+            navigate("/login");
+            console.log("After navigate");
             setLoading(false)
         } catch (error) {
             console.log(error)
@@ -44,7 +46,7 @@ export const useAuth = () => {
     const getMe = async () => {
         try {
             setLoading(true)
-            const data = await getMe()
+            const data = await getMeApi()
             console.log(data)
             setIsAuthenticated(data.authenticated)
         } catch (error) {
@@ -54,6 +56,6 @@ export const useAuth = () => {
         }
     }
 
-    return { loading, handleRegister, handleLogin , getMe , isAuthenticated }
+    return { loading, handleRegister, handleLogin, getMe, isAuthenticated }
 }
 

@@ -29,7 +29,7 @@ export async function loginApi ({email , password}){
     }
 }
 
-export async function getMe () {
+export async function getMeApi () {
     const response = await api.get("/api/auth/get-me")
 
     return response.data
