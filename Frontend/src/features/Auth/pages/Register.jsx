@@ -21,7 +21,7 @@ const Register = () => {
     }
 
     if (loading){
-        return <main><h1>Loadingg ... .. ....</h1></main>
+        return <main className='loader'></main>
     }
 
 

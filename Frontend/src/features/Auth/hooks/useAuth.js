@@ -17,6 +17,8 @@ export const useAuth = () => {
             setUser(data.user)
             alert(data.message)
             console.log(data)
+            navigate("/login")
+            setLoading(false)
         } catch (error) {
             console.log(error)
         } finally {
@@ -31,6 +33,7 @@ export const useAuth = () => {
             setUser(data.user)
             console.log(data)
             navigate('/create')
+            setLoading(false)
         } catch (error) {
             console.log(error)
         } finally {
@@ -42,6 +45,7 @@ export const useAuth = () => {
         try {
             setLoading(true)
             const data = await getMe()
+            console.log(data)
             setIsAuthenticated(data.authenticated)
         } catch (error) {
             console.log(error)
