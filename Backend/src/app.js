@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin : "https://6a722c7491644928b770b6bb--hilarious-torte-46be6d.netlify.app/" ,
+    origin : "https://hilarious-torte-46be6d.netlify.app" ,
     credentials : true
 }))
 
