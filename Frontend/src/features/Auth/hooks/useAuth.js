@@ -34,6 +34,7 @@ export const useAuth = () => {
             const data = await loginApi({ email, password })
             setUser(data.user)
             console.log(data)
+            setIsAuthenticated(true)
             navigate('/create')
             setLoading(false)
         } catch (error) {
