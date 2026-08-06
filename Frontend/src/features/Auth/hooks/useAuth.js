@@ -18,7 +18,7 @@ export const useAuth = () => {
             alert(data.message)
             console.log(data)
             console.log("Before navigate");
-            navigate("/login");
+            navigate('/login')
             console.log("After navigate");
             setLoading(false)
         } catch (error) {

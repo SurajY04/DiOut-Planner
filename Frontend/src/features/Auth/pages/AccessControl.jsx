@@ -10,6 +10,10 @@ const AccessControl = () => {
         getMe()
     }, [])
 
+    if(loading){
+        return <main className='loader'></main>
+    }
+
     return isAuthenticated  ? <Outlet/> : <Navigate to={"/login"} />
 }
 

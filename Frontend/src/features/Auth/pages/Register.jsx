@@ -40,7 +40,9 @@ const Register = () => {
         </div>
         <div id="register-main-bottom">
             <button type="submit" form='register-form'>Sign Up</button>
+            <h3><a href="/login"></a>Already a user ? Log In</h3>
         </div>
+
     </div>
   )
 }

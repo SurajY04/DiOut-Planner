@@ -26,13 +26,13 @@ const CreatePlan = () => {
     }
 
     if(loading){
-        return <main><h1>Loading........</h1></main>
+        return <main className='loader'></main>
     }
 
     return (
         <div id="create-plan-main">
             <div id="create-plan-main-upper">
-                <div id="icon"><img src="./src/assets/screen.png" /></div>
+                <div id="icon"><img src="/screen.png" /></div>
                 <h1>Create your customize health plan with DiOut Planner</h1>
             </div>
             <div id="create-plan-main-middle">

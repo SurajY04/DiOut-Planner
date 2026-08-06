@@ -17,6 +17,10 @@ const Login = () => {
         })
     }
 
+    if (loading) {
+        return <main className='loader'></main>
+    }
+
 
     return (
         <div id="login-main">

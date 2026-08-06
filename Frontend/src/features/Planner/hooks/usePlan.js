@@ -20,8 +20,12 @@ export const usePlan = () => {
                 isVegetarian
             })
             console.log(data.weeklyPlanner.weeklyPlan)
+            console.log(data)
+            console.log(data.id)
+            console.log(data._id)
             setId(data.id);
-            navigate(`/get-plan/${data.id}`)
+            console.log(id)
+            navigate(`/get-plan/${data.weeklyPlanner._id}`)
 
         } catch (error) {
             console.log(error)
