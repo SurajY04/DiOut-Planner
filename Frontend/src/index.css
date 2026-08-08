@@ -42,7 +42,7 @@ html {
   content: "";
   flex: 1;
   padding-left: calc(100%/6);
-  background: radial-gradient(closest-side at calc(100%/3) 50%, #000 90%, #0000) 0/75% 100% content-box;
+  background: radial-gradient(closest-side at calc(100%/3) 50%, #d52626 90%, #17137200) 0/75% 100% content-box;
   animation: l20 2s infinite;
 }
 
@@ -443,6 +443,9 @@ nav ul {
   overflow-y: auto;
   word-spacing: 2px;
   word-break: keep-all;
+  touch-action: pan-y;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 #card-back ul {
@@ -754,11 +757,6 @@ nav ul {
   #card {
     height: 140px;
     width: 80vw;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    touch-action: pan-y;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
   }
 
   #macros {
